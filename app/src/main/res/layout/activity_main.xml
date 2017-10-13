@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jp.android_group.student.abc2017a.MainActivity">
+
+    <TextView
+        android:id="@+id/debug_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="70dp" />
+
+    <Button
+        android:id="@+id/dcforward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dcforward"
+        android:layout_marginTop="145dp"
+        android:layout_marginStart="50dp"/>
+
+
+    <Button
+        android:id="@+id/dcback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dcback"
+        android:layout_marginTop="195dp"
+        android:layout_marginStart="50dp" />
+
+    <Button
+        android:id="@+id/dcstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dcstop"
+        android:layout_marginTop="145dp"
+        android:layout_marginStart="177dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:progress="50"
+        android:max="100"
+        android:layout_marginTop="255dp"
+        android:layout_marginStart="30dp" />
+
+</RelativeLayout>
