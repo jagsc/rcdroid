@@ -3,7 +3,7 @@ package jp.android_group.student.abc2017a;
 import android.util.Log;
 
 import com.google.android.things.pio.Gpio;
-import com.google.android.things.pio.PeripheralManagerService;
+import com.google.android.things.pio.PeripheralManager;
 import com.google.android.things.pio.Pwm;
 
 import java.io.IOException;
@@ -17,9 +17,9 @@ public class DCMotorDriver {
     private static final double PWM_FREQUENCY_HZ = 50.0;
     private Pwm mPwm;
     private Gpio mVecGPIO;
-    private PeripheralManagerService mManager;
+    private PeripheralManager mManager;
 
-    DCMotorDriver(PeripheralManagerService manager,String pwmName,String vecPin){
+    DCMotorDriver(PeripheralManager manager,String pwmName,String vecPin){
         mManager = manager;
         try{
             this.mPwm = mManager.openPwm(pwmName);

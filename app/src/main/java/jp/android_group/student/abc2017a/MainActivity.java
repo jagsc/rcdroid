@@ -1,11 +1,9 @@
 package jp.android_group.student.abc2017a;
 
+import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.view.menu.ExpandedMenuView;
-import android.support.v7.widget.ButtonBarLayout;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +11,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import com.google.android.things.pio.Gpio;
-import com.google.android.things.pio.PeripheralManagerService;
+import com.google.android.things.pio.PeripheralManager;
 import com.google.android.things.pio.Pwm;
 
 import java.io.IOException;
@@ -23,12 +21,12 @@ import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.ExecutionException;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private static final String PWM_NAME = "";
     private Pwm mPwmDc;
     private Gpio mGPIOForwardBackDc;
-    private PeripheralManagerService mPeripheralManager = new PeripheralManagerService();
+    private PeripheralManager mPeripheralManager = PeripheralManager.getInstance();
     private DCMotorDriver mDcMDriver;
     private double mSpeed=0;
 

@@ -3,7 +3,7 @@ package jp.android_group.student.abc2017a;
 import android.os.Handler;
 import android.util.Log;
 
-import com.google.android.things.pio.PeripheralManagerService;
+import com.google.android.things.pio.PeripheralManager;
 import com.google.android.things.pio.Pwm;
 
 import java.io.IOException;
@@ -15,10 +15,10 @@ import java.io.IOException;
 public class ServoMotorDriver {
     private static final double PWM_FREQUENCY_HZ = 50.0;
     private Pwm mPwm;
-    private PeripheralManagerService mManager;
+    private PeripheralManager mManager;
     private Handler mHandler = new Handler();
 
-    ServoMotorDriver(PeripheralManagerService manager, String pwmName){
+    ServoMotorDriver(PeripheralManager manager, String pwmName){
         this.mManager = manager;
         try{
             this.mPwm = mManager.openPwm(pwmName);
