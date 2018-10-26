@@ -31,18 +31,18 @@ public class ServoMotorDriver {
     }
 
     /*
-      *duty: 5-10
+      *duty: 6-9
       *parcent 0-100
     */
-    public void rotate(double parcent){
-        if(parcent<0.0 || 100.0<parcent){
+    public void rotate(double percent){
+        if(percent<0.0 || 100.0<percent){
             return;
         }
-        double duty = 0.05*parcent+5; //parcent to duty (range 5-10)
+        double duty = 0.03*percent+6; //parcent to duty (range 6-9)
         try{
             this.mPwm.setPwmDutyCycle(duty);
             this.mPwm.setEnabled(true);
-            //mHandler.postDelayed(stopPwm,500);
+            //mHandler.postDelayed(stopPwm,1000);
         }catch (IOException e){
             Log.w("ServoMotorDriver", "Unable to access PWM", e);
         }
