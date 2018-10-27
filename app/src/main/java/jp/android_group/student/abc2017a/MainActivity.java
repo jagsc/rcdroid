@@ -14,12 +14,8 @@ import com.google.android.things.pio.Gpio;
 import com.google.android.things.pio.PeripheralManager;
 import com.google.android.things.pio.Pwm;
 
-import java.io.IOException;
 import java.net.DatagramSocket;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
-import java.util.concurrent.ExecutionException;
 
 public class MainActivity extends Activity {
 
