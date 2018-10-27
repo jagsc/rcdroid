@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ABC2017a.iml" filepath="$PROJECT_DIR$/ABC2017a.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rcdroid.iml" filepath="$PROJECT_DIR$/rcdroid.iml" />
     </modules>
   </component>
 </project>
