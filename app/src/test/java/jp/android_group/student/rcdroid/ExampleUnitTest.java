@@ -1,4 +1,4 @@
-package jp.android_group.student.abc2017a;
+package jp.android_group.student.rcdroid;
 
 import org.junit.Test;
 

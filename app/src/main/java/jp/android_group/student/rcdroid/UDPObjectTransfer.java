@@ -1,4 +1,4 @@
-package jp.android_group.student.abc2017a;
+package jp.android_group.student.rcdroid;
 
 /**
  * Created by KG on 2017/10/07.
